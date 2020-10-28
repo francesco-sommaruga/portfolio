@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.container {
+    background-color: $background;
+    ul{
+        margin-top: 1rem;
+        padding: 0;
+        list-style: none;
+        li {
+            padding: 0 1rem;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+            button{
+                background-color: transparent;
+                border-style: none;
+                font-size: 2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white;
+                padding: 1.3rem 0;
+            }
+        }
+        li:hover{
+            transform: translateY(5px);
+            background-color: $hover;
+            cursor: pointer;
+        }
+    }
+}

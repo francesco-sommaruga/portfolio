@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.page-layout {
+    display: grid;
+    grid-template-columns: minmax(400px, 25%) 1fr;
+    height: 100vh;
+}
+
+.main-footer {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+@media screen and (max-width: $layout) {
+    .page-layout {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: none;
+        height: 100vh;
+    }
+    
+    .main-footer {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+}

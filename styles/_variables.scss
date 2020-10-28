@@ -1,0 +1,25 @@
+//colors
+
+$objects: #243342;
+$background: #2D2A2A;
+$main-background: #ECF3F3;
+$clouds: #ECF0F1;
+$white: #fff;
+$grey: #ccc;
+$hover: #1fa2ff;
+
+@mixin text-gradient-on-black{
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin text-gradient-on-white{
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+// breakpoints
+$layout: 1200px;
+$mobile: 768px;

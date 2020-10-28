@@ -1,4 +1,4 @@
-This is a  project.
+Hi! I'm Francesco and this is my:
 
 # Portfolio
 
