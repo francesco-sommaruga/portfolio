@@ -3,14 +3,13 @@
 .page-layout {
     display: grid;
     grid-template-columns: minmax(400px, 25%) 1fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .main-footer {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-y: scroll;
 }
 
 @media screen and (max-width: $layout) {

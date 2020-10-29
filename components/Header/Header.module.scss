@@ -1,6 +1,10 @@
 @import '../../styles/variables';
 
 .header {
+    position: fixed;
+    top: 0;
+    min-width: 400px;
+    height: 100vh;
     padding: 0;
     background-color: $background;
     color: $white;
@@ -11,6 +15,7 @@
 
 @media screen and (max-width: $layout) {
     .header {
+        height: auto;
         padding: 10px;
         display: grid;
         position: relative;

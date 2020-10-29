@@ -47,7 +47,9 @@ export class PageLayout extends React.Component<MyProps, MyState> {
     render() {
         return (
             <div className={styles['page-layout']}>
-                <Header pages={this.state.pages} onClick={this.handleHamburgerClick} isNavOpen={this.state.isNavOpen} />
+                <div>
+                    <Header pages={this.state.pages} onClick={this.handleHamburgerClick} isNavOpen={this.state.isNavOpen} />
+                </div>
                 <div className={styles['main-footer']}>
                     <Main>{this.props.children}</Main>
                     <Footer />
