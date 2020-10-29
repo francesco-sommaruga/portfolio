@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.card{
+    background-color: $hover;
+    padding: 5px;
+}
+
+.columns-2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+}

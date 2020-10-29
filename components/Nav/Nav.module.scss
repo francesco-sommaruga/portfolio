@@ -7,16 +7,20 @@
         padding: 0;
         list-style: none;
         li {
-            padding: 0 1rem;
             transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
-            button{
-                background-color: transparent;
-                border-style: none;
-                font-size: 2rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: $white;
-                padding: 1.3rem 0;
+            padding: 0;
+            div {
+                padding: 0 1rem;
+                margin: 0;
+                button{
+                    background-color: transparent;
+                    border-style: none;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $white;
+                    padding: 1.3rem 0;
+                }
             }
         }
         li:hover{
@@ -24,5 +28,15 @@
             background-color: $hover;
             cursor: pointer;
         }
+        li.active {
+            background-color: $hover;
+        }
+    }
+}
+
+
+@media screen and (max-width: $layout) {
+    .container{
+        text-align: center;
     }
 }

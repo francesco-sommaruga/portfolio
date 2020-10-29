@@ -1,22 +1,21 @@
-import React from 'react';
-import styles from './Nav.module.scss';
+import React from 'react'
+import Link from 'next/link'
+import styles from './Nav.module.scss'
+import { useRouter } from 'next/router'
 
-export class Nav extends React.Component{
+export function Nav(props) {
 
-    render(){
-        return (
-            <section className={styles.container}>
-                {this.props.children}
-                <nav>
-                    <ul>
-                        <a href=""><li><button>Home</button></li></a>
-                        <a href=""><li><button>About</button></li></a>
-                        <a href=""><li><button>Projects</button></li></a>
-                        <a href=""><li><button>Contacts</button></li></a>
-                    </ul>
-                </nav>
-            </section>
-        )
-    }
+    const activePath= useRouter().pathname;
+    const pages = props.pages;
+
+    return (
+        <section className={styles.container}>
+            <nav>
+                <ul>
+                    {pages.map(page => <li key={page.name} className={page.path === activePath ? styles.active : null}><Link href={page.path}><a><div><button>{page.name}</button></div></a></Link></li>)}
+                </ul>
+            </nav>
+        </section>
+    )
 
 }

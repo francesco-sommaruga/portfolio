@@ -1,14 +1,12 @@
 import React from 'react'
 import styles from './Main.module.scss'
 
-export class Main extends React.Component {
+export const Main = props => {
 
-    render() {
-        return (
-            <main className={styles.main}>
-                
-            </main>
-        )
-    }
+    return (
+        <main className={styles.main}>
+            {props.children}
+        </main>
+    )
 
 }

@@ -8,14 +8,20 @@ $white: #fff;
 $grey: #ccc;
 $hover: #1fa2ff;
 
+//transitions
+$default-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+$transition-effect: cubic-bezier(0.075, 0.82, 0.165, 1);
+
 @mixin text-gradient-on-black{
     background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    background-clip: text;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 @mixin text-gradient-on-white{
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

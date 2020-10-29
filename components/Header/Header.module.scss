@@ -8,3 +8,13 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@media screen and (max-width: $layout) {
+    .header {
+        padding: 10px;
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr auto;
+        place-items: center;
+    }
+}
